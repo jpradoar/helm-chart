@@ -12,6 +12,13 @@ A personal helm repo chart
 ### To see all charts
 	helm search repo jpradoar		
 
+### Install a demo deployment
+	helm upgrade -i -n superdemo --create-namespace superdemo jpradoar/demo
+
+
+### Delete demo depoyment
+	helm -n superdemo delete superdemo
+
 
 <br>
 
