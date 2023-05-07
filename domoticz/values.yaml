@@ -14,21 +14,12 @@ service:
   port: 8080
   https_port: 8443
   path: /
+  loadBalancer: aws # none/aws
 
-# resources:
-#   limits:
-#    cpu: 100m
-#    memory: 128Mi
-#   requests:
-#    cpu: 100m
-#    memory: 128Mi
-
-# securityContext:
-#   runAsUser: 1000
-#   runAsGroup: 1000
-#   allowPrivilegeEscalation: false
-#   privileged: false
-#   readOnlyRootFilesystem: false  
-#   runAsNonRoot: true
-#   capabilities:
-#     drop: ["ALL"]
+resources:
+  limits:
+   cpu: 100m
+   memory: 128Mi
+  requests:
+   cpu: 100m
+   memory: 128Mi

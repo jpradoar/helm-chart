@@ -67,21 +67,4 @@ spec:
             port: {{ .Values.service.port }}
           initialDelaySeconds: 3
           periodSeconds: 3
-#-----------------------------------------          
-        # resources:
-        #   limits:
-        #     cpu: {{ .Values.resources.limits.cpu }}
-        #     memory: {{ .Values.resources.limits.memory }}
-        #   requests:
-        #     cpu: {{ .Values.resources.requests.cpu }}
-        #     memory: {{ .Values.resources.requests.memory }}
-#-----------------------------------------            
-        # securityContext:
-        #   runAsUser: {{ .Values.securityContext.runAsUser }}
-        #   runAsGroup: {{ .Values.securityContext.runAsGroup }}
-        #   allowPrivilegeEscalation: {{ .Values.securityContext.allowPrivilegeEscalation }}
-        #   privileged: {{ .Values.securityContext.privileged }}
-        #   readOnlyRootFilesystem: {{ .Values.securityContext.readOnlyRootFilesystem }}  
-        #   runAsNonRoot: {{ .Values.securityContext.runAsNonRoot }}
-        #   capabilities:
-        #     drop: {{ .Values.securityContext.capabilities.drop }}
+

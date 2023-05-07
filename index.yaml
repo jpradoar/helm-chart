@@ -3,7 +3,7 @@ entries:
   demo:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-06T22:14:12.164449256-03:00"
+    created: "2023-05-06T23:20:45.161073084-03:00"
     description: A Helm chart for Kubernetes
     digest: e4e9db1c21b68f7032545e9fce3104bdb271fed1b3c28c29905d583c67994737
     name: demo
@@ -14,12 +14,12 @@ entries:
   domoticz:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-05-06T22:14:12.164586924-03:00"
+    created: "2023-05-06T23:20:45.161250668-03:00"
     description: A Helm chart for Kubernetes
-    digest: 9b0f12f0d189f25dc35d0385cd9a48838571e5ea88055be5dda718bfddb90a1d
+    digest: ec4ffb38ee8ddd247a1f222a63ec1c9a82f86c7709a8c9fc8050f735f7ab69fc
     name: domoticz
     type: application
     urls:
     - charts/domoticz-1.0.0.tgz
     version: 1.0.0
-generated: "2023-05-06T22:14:12.164090134-03:00"
+generated: "2023-05-06T23:20:45.160676793-03:00"
