@@ -14,6 +14,10 @@ A personal helm repo chart
 
 ### Install a demo deployment
 	helm upgrade -i -n superdemo --create-namespace superdemo jpradoar/demo
+ 	helm upgrade -i -n default --create-namespace demoapp jpradoar/domoticz \
+  		--set general.name=democlient \
+    		--set general.tz=America/Argentina/Buenos_Aires \
+      		--set service.loadBalancer=None
 
 
 ### Delete demo depoyment
