@@ -22,20 +22,4 @@ entries:
     urls:
     - charts/domoticz-1.0.0.tgz
     version: 1.0.0
-  event-driven-architecture:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2024-11-19T20:51:50.416026043Z"
-    dependencies:
-    - name: rabbitmq
-      repository: https://charts.bitnami.com/bitnami
-      version: 15.0.6
-    description: Helm chart to deploy event driven architecture
-    digest: e8fb1b419196a24b4691ab349ea06355bc80ec5b03d38359a6567026b27d80ce
-    icon: https://devnulnone.com/none.png
-    name: event-driven-architecture
-    type: application
-    urls:
-    - charts/event-driven-architecture-1.0.0.tgz
-    version: 1.0.0
 generated: "2024-11-19T20:51:50.411274536Z"
