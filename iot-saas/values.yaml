@@ -59,7 +59,7 @@ mariadb:
 
 webserver:
   image: jpradoar/mqtt-webserver
-  tag: 1.1.1
+  tag: 1.1.7
   imagePullPolicy: Always
   LoadBalancer: 
     enabled: false
