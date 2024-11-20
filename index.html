@@ -1,33 +1,58 @@
-# helm-chart
-A personal helm repo chart
+<!DOCTYPE html>
+<html>
+<body>
+
+<div align="center">
+<h1>jpradoar - helm-repo</h1>
+<p>A personal helm repo chart</a></p>
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Helm_%28package_manager%29_logo.svg/800px-Helm_%28package_manager%29_logo.svg.png" height="100" with="100">
+
+
+
+</div> 
+
+<br><br>
+
+
+<h3>Add this repo</h3>
+<pre>helm repo add jpradoar https://jpradoar.github.io/helm-chart/ </pre>
 
 <br>
 
-### Add this repo
-	helm repo add jpradoar https://jpradoar.github.io/helm-chart/
+<h3>Optional update repo</h3>
+<pre>helm repo update</pre> 
 
-### Optional update repo
-	helm repo update
+<br>
 
-### To see all charts
-	helm search repo jpradoar		
+<h3>To see all charts</h3>
+<pre>helm search repo jpradoar	</pre> 	
 
-### Install a demo deployment
-	helm upgrade -i -n superdemo --create-namespace superdemo jpradoar/demo
- 	helm upgrade -i -n default --create-namespace demoapp jpradoar/domoticz \
-  		--set general.name=democlient \
-    		--set general.tz=America/Argentina/Buenos_Aires \
-      		--set service.loadBalancer=None
+<br>
 
+<h3>Install a demo deployment</h3>
+<pre>
+helm upgrade -i -n superdemo --create-namespace superdemo jpradoar/demo
+helm upgrade -i -n default --create-namespace demoapp jpradoar/domoticz \
+ --set general.name=democlient \
+ --set general.tz=America/Argentina/Buenos_Aires \
+ --set service.loadBalancer=None
+</pre> 
 
-### Delete demo depoyment
-	helm -n superdemo delete superdemo
+<br>
+
+<h3>Delete demo depoyment</h3>
+<pre>helm -n superdemo delete superdemo</pre> 
 
 
 <br>
 
-### Create new Helms  (helm-chart)
-	helm create demo
-	helm package demo/
-	mv demo-x.y.tgz charts/
-	helm repo index .
+<h3>Create new Helms  (helm-chart)</h3>
+<pre>
+helm create demo
+helm package demo/
+mv demo-x.y.tgz charts/
+helm repo index .
+</pre>   
+    
+</body>
+</html>
