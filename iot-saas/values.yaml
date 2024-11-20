@@ -32,7 +32,7 @@ rabbitmq:
 
 producer:
   image: jpradoar/mqtt-producer
-  tag: 1.1.5
+  tag: 1.1.6
   imagePullPolicy: Always
   LoadBalancer: 
     enabled: false
