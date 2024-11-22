@@ -32,7 +32,7 @@ rabbitmq:
 
 producer:
   image: jpradoar/mqtt-producer
-  tag: 1.1.6
+  tag: 1.1.6-demo
   imagePullPolicy: Always
   LoadBalancer: 
     enabled: false
@@ -59,7 +59,7 @@ mariadb:
 
 webserver:
   image: jpradoar/mqtt-webserver
-  tag: 1.1.8
+  tag: 1.1.9
   imagePullPolicy: Always
   LoadBalancer: 
     enabled: false
