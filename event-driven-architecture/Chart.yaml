@@ -1,0 +1,11 @@
+apiVersion: v2
+appVersion: 1.16.0
+dependencies:
+- name: rabbitmq
+  repository: https://charts.bitnami.com/bitnami
+  version: 15.0.6
+description: Helm chart to deploy event driven architecture
+icon: https://devnulnone.com/none.png
+name: event-driven-architecture
+type: application
+version: 1.0.0

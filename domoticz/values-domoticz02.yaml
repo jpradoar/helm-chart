@@ -1,0 +1,6 @@
+general:
+  name: domoticz-02
+  tz: Europe/Amsterdam
+
+service:
+  loadBalancer: none # none/aws

@@ -3,7 +3,7 @@ entries:
   demo:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-22T17:41:17.905889864Z"
+    created: "2025-08-20T16:31:50.539838582Z"
     description: A Helm chart for Kubernetes
     digest: e4e9db1c21b68f7032545e9fce3104bdb271fed1b3c28c29905d583c67994737
     name: demo
@@ -14,7 +14,7 @@ entries:
   domoticz:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-11-22T17:41:17.906063316Z"
+    created: "2025-08-20T16:31:50.540020951Z"
     description: A Helm chart for Kubernetes
     digest: ec4ffb38ee8ddd247a1f222a63ec1c9a82f86c7709a8c9fc8050f735f7ab69fc
     name: domoticz
@@ -25,17 +25,17 @@ entries:
   event-driven-architecture:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-22T17:41:17.910167076Z"
+    created: "2025-08-20T16:31:50.545011113Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami
       version: 15.0.6
     description: Helm chart to deploy event driven architecture
-    digest: a313e932bd674b6a202af2fd0c2b672ba2cb7a94cb327fd2cf08d4617475f28c
+    digest: 07963cb3df18699498a6cfb864981588075ec6666b849e0bfb1b7e97459ede49
     icon: https://devnulnone.com/none.png
     name: event-driven-architecture
     type: application
     urls:
     - charts/event-driven-architecture-1.0.0.tgz
     version: 1.0.0
-generated: "2024-11-22T17:41:17.905476347Z"
+generated: "2025-08-20T16:31:50.539247022Z"

@@ -1,58 +1,121 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Helm repo - jpradoar</title>
+<style>
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', sans-serif;
+	background: rgb(26, 188, 156);
+	background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+	background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+}
+h1 {
+	font-size: 24px;
+	margin: 10px 0 0 0;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #eeeeee;
+}
+p {
+	font-size: 12px;
+	font-weight: light;
+	color: #333333;
+}
+span a {
+	font-size: 18px;
+	color: #cccccc;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: all 0.4s ease-in-out;
+	&:hover {
+		color: #ffffff;
+	}
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.avatar {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+.content {
+	width: 100%;
+	max-width: 600px;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.suppoprt-me {
+	display: inline-block;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	width: 20vw;
+	max-width: 250px;
+	min-width: 200px;
+	z-index: 9;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}	
+</style>
+</head>
 <body>
 
-<div align="center">
-<h1>jpradoar - helm-repo</h1>
-<p>A personal helm repo chart</a></p>
-<img src="img/helm-logo.png" height="100" with="100">
-
-
-
-</div> 
-
-<br><br>
-
-
-<h3>Add this repo</h3>
-<pre>helm repo add jpradoar https://jpradoar.github.io/helm-chart/ </pre>
-
-<br>
-
-<h3>Optional update repo</h3>
-<pre>helm repo update</pre> 
-
-<br>
-
-<h3>To see all charts</h3>
-<pre>helm search repo jpradoar	</pre> 	
-
-<br>
-
-<h3>Install a demo deployment</h3>
-<pre>
-helm upgrade -i -n superdemo --create-namespace superdemo jpradoar/demo
-helm upgrade -i -n default --create-namespace demoapp jpradoar/domoticz \
- --set general.name=democlient \
- --set general.tz=America/Argentina/Buenos_Aires \
- --set service.loadBalancer=None
-</pre> 
-
-<br>
-
-<h3>Delete demo depoyment</h3>
-<pre>helm -n superdemo delete superdemo</pre> 
-
-
-<br>
-
-<h3>Create new Helms  (helm-chart)</h3>
-<pre>
-helm create demo
-helm package demo/
-mv demo-x.y.tgz charts/
-helm repo index .
-</pre>   
-    
 </body>
 </html>
+<div class="container">
+	<div class="avatar">
+		<a href="https://github.com/jpradoar/" target="_blank">
+			<img src="https://cache.sessionize.com/image/8fe2-200o200o2-XSuK2o1T4qy8izSUP9bsCp.jpg" alt="jpradoar" />
+		</a>
+	</div>
+	<div class="content">
+		<h1>Jonathan Prado</h1>
+		<a href="https://github.com/jpradoar/helm-chart/" target="_blank">
+			<img src="img/helm-logo.png" height="100" with="100">
+		</a> 
+		<a href="https://github.com/jpradoar/helm-chart/" target="_blank">
+			<h1>See repo</h1>
+		</a>
+
+		
+	</div>
+</div>
+
+<a class="suppoprt-me" href="https://buymeacoffee.com/jpradoar" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Coffee&nbsp&emoji=&slug=jpradoar&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"></a>
