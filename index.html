@@ -83,7 +83,7 @@ span a {
 	display: inline-block;
 	position: fixed;
 	bottom: 10px;
-	left: 10px;
+	left: 58%;
 	width: 20vw;
 	max-width: 250px;
 	min-width: 200px;
@@ -114,8 +114,44 @@ span a {
 			<h1>See repo</h1>
 		</a>
 
-		
+
+
 	</div>
 </div>
 
+<div align="center">
+	<h1>How to use this repo</h1>
+</div>
+
+<h3>Add repo</h3>
+<code>
+helm repo add jpradoar https://jpradoar.github.io/helm-chart/ 
+helm repo update
+</code><br><br>
+
+<h3>See all charts</h3>
+<code>
+helm search repo jpradoar
+</code>
+
+<h3>Install a demo deployment</h3>
+<code>
+helm upgrade -i -n superdemo --create-namespace superdemo jpradoar/demo
+</code><br><br>
+
+<h3>Delete demo depoyment</h3>
+<code>
+helm -n superdemo delete superdemo
+</code>
+
+<h3>Create new Helms (helm-chart)</h3>
+<code>
+helm create demo
+<br>helm package demo/
+<br>mv demo-x.y.tgz charts/
+<br>helm repo index .
+</code><br><br>
+
+
+<br>
 <a class="suppoprt-me" href="https://buymeacoffee.com/jpradoar" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Coffee&nbsp&emoji=&slug=jpradoar&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"></a>
